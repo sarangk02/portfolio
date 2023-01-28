@@ -34,7 +34,9 @@
 
 <body>
 
-    <section style="min-height: 100vh;">
+    <div id="blankside" style="height: 100vh; display: none; "></div>
+
+    <section>
         <!-- Nav Bar -->
         <div id="non-menu" class="container-fluid">
             <nav class="navbar-light">
@@ -134,8 +136,8 @@
         </div>
 
         <!-- Hero Section  -->
-        <div class="container text-center" style="font-size: 3vw;">
-            <div class="fst-italic font-monospace my-5">
+        <div class="container text-center d-flex flex-column" style="width: auto;">
+            <div class="fst-italic font-monospace hero-quote">
                 <q>Any fool can write code that a computer can understand. Good programmers write code that humans can
                     understand.</q>
             </div>
@@ -145,18 +147,19 @@
                 </a>
             </div>
         </div>
+
     </section>
 
     <!-- Skillset section  -->
     <section id="skillset">
         <div class="container-fluid"
-            style="min-height: 100vh; background: url(assets/images/dark-backgroud.jpg); padding: 10vh 0;">
+            style="background: url(assets/images/dark-backgroud.jpg); padding: 80px 0;">
             <div class="container py-1 text-white">
                 <p class="fs-1">My <b> Skills</b> are </p>
                 <hr>
                 <div class="mx-lg-5 mx-md-3 mx-sm-1">
                     <div class="row">
-                        <p class="fs-3 fst-italic " style="margin: 5vh 0 -2vh -10px; font-family: 'Cairo';">Can build
+                        <p class="fs-3 fst-italic " style="margin: 50px 0 0 -5px; font-family: 'Cairo';">Can build
                             with</p>
                         <div class="col-md-3 my-4">
                             <div class="ss-content">
@@ -227,7 +230,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <p class="fs-3 fst-italic " style="margin: 5vh 0 -2vh -10px; font-family: 'Cairo';">Can code
+                        <p class="fs-3 fst-italic " style="margin: 50px 0 0 -5px; font-family: 'Cairo';">Can code
                         </p>
                         <div class="col-md-3 my-4">
                             <div class="ss-content">
@@ -250,7 +253,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <p class="fs-3 fst-italic " style="margin: 5vh 0 -2vh -10px; font-family: 'Cairo';">Can operate
+                        <p class="fs-3 fst-italic " style="margin: 50px 0 0 -5px; font-family: 'Cairo';">Can operate
                         </p>
                         <div class="col-md-3 my-4">
                             <div class="ss-content">
@@ -381,11 +384,11 @@
     </section>
 
     <section id="projects">
-        <div class="container" style="margin: 8vh auto;">
-            <p class="fs-1">I have completed this <span class="h1">Projects</span>
-            </p>
+
+        <p class="fs-1 container" style="margin: 80px auto 40px auto;">I have completed this <span class="h1">Projects</span></p>
 
 
+        <div class="container" id="projects1">
             <div id="carouselCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
@@ -514,19 +517,147 @@
                 </button>
             </div>
         </div>
+
+        <div class="container" id="projects2">
+
+            <!-- TCS Quiz App  -->
+            <div class="card my-5" style="max-width: 767px; background-color: rgba(0, 0, 0, 0.05);">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/images/pr-quiz.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">TCS Quiz Website</h5>
+                            <p class="card-text">The TCS Quiz app is a website for Department of Computer Engineering,
+                                KJSIEIT in
+                                which student can give <q>Theoretical Computer Science</q> subject quiz in 4
+                                difficulty levels of questions, i.e. Basic, Intermediate, Advanced and Dynamic. In
+                                Dynamic level, the level of questions is changed with your performance with
+                                respective quiz.</p>
+                            <p><b>Technology used</b> - HTML, CSS, JavaScript,
+                                Bootstrap, MySQL, PHP, Web Scraping using Python</p>
+                            <p> <b>link - </b> <a class="text-primary text-decoration-underline"
+                                    href="https://github.com/sarangk02/SYSS.git" target="_blank">TCS-Quiz-WebApp</a>
+                            </p>
+                            <p class="card-text"><small class="text-muted">November, 2021</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weather Teller -->
+            <div class="card my-5" style="max-width: 767px; background-color: rgba(0, 0, 0, 0.05);">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/images/pr-weather.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather Teller</h5>
+                            <p class="card-text">Weather Teller is a weather prediction service delivered with the
+                                assistance of an
+                                API.</p>
+                            <p><b>Technology used</b> - Weather Teller is a weather prediction service delivered with
+                                the assistance of an
+                                API.</p>
+                            <p> <b>link - </b> <a class="text-primary text-decoration-underline" href=""
+                                    target="_blank">Weather-Teller</a>
+                            </p>
+                            <p class="card-text"><small class="text-muted">Expected February, 2023</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- School Management System -->
+            <div class="card my-5" style="max-width: 767px; background-color: rgba(0, 0, 0, 0.05);">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/images/pr-sms.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">School Management System</h5>
+                            <p class="card-text">The school management website is a website that will help a particular
+                                school to run
+                                and manage the school effectively and easily.</p>
+                            <p><b>Technology used</b> - Bootstrap, Python - Django,
+                                Django database</p>
+                            <p> <b>link - </b> <a class="text-primary text-decoration-underline"
+                                    href="https://github.com/sarangk02/School-Management-System.git"
+                                    target="_blank">School-Management-System</a>
+                            </p>
+                            <p class="card-text"><small class="text-muted">April, 2022</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Whatsapp Spam Bot -->
+            <div class="card my-5" style="max-width: 767px; background-color: rgba(0, 0, 0, 0.05);">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/images/pr-whtspbot.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Whatsapp Spam Bot</h5>
+                            <p class="card-text">Fun project , which sends repeatedly same message for mentioned times
+                                to provided
+                                name of the Contact.</p>
+                            <p><b>Technology used</b> - Python - tkinter and PyAutoGUI</p>
+                            <p> <b>link - </b> <a class="text-primary text-decoration-underline"
+                                    href="https://github.com/sarangk02/WhatsaApp_Spam_Bot.git"
+                                    target="_blank">WhatsaApp_Spam_Bot</a>
+                            </p>
+                            <p class="card-text"><small class="text-muted">December, 2021</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card my-5" style="max-width: 767px; background-color: rgba(0, 0, 0, 0.05);">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/images/pr-gms.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Gym Management Website</h5>
+                            <p class="card-text">Gym Management System is a website that will help a particular gym
+                                management or gym
+                                owner to run and manage the gym effectively and easily.</p>
+                            <p><b>Technology used</b> - HTML, CSS,
+                                Javascript, JQuery, JDBC and
+                                Java Server Pages</p>
+                            <p> <b>link - </b> <a class="text-primary text-decoration-underline"
+                                    href="https://github.com/sarangk02/Gym-Management-Website.git"
+                                    target="_blank">Gym-Management-Website</a>
+                            </p>
+                            <p class="card-text"><small class="text-muted">November, 2021</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
 
     <!-- Contact above footer -->
     <section>
-        <div class="container" style="margin-top: 12vh; margin-bottom: 12vh">
+        <div class="container" style="margin: 100px auto 0 auto;">
             <div id="contact-short-container" class="d-flex flex-column mx-auto p-5">
                 <div class="text-dark h2 text-center">Interested in Working together? Let's chat.</div>
                 <div class="col mx-auto my-2 text-center">
-                    <a href="contact.html"><button type="button" id="nav-btn-cntct" class="btn btn-outline-dark">Get in
+                    <a href="contact.html"><button type="button" id="nav-btn-cntct"
+                            class="my-2 btn btn-outline-dark">Get in
                             Touch</button></a>
                     <a href="assets/Sarang-Resume.pdf" download="Sarang-Resume.pdf"><button type="button"
-                            id="nav-btn-cntct" class="btn btn-outline-dark">Resume</button></a>
+                            id="nav-btn-cntct" class="my-2 btn btn-outline-dark">Resume</button></a>
                 </div>
             </div>
         </div>
@@ -535,7 +666,7 @@
     <!-- Footer -->
     <footer id="footer">
         <div id="footer-container" class="container-fluid">
-            <div class="container-fluid" style="padding-top: 5vh; margin-top: 5vh;">
+            <div class="container-fluid" style="padding-top: 50px; margin-top: 50px;">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12 text-center menu-content my-2">
                         <a class="navbar-brand" href="index.html" style="font-family: 'elianto';">

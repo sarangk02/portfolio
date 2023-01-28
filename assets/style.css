@@ -42,7 +42,7 @@ body {
 #non-menu {
     display: block;
     z-index: 999;
-    margin: 0 0 15vh 0;
+    margin: 0 0 8vh 0;
 }
 
 #nav-btn {
@@ -136,7 +136,9 @@ body {
     font-family: 'Cairo';
     font-size: larger;
 }
-#sub-nav:hover, #sub-nav:active {
+
+#sub-nav:hover,
+#sub-nav:active {
     color: black;
 }
 
@@ -163,7 +165,8 @@ body {
     transition: all 0.4s ease-in-out 0s
 }
 
-.ss-content:hover .ss-content-overlay, .ss-content:active .ss-content-overlay {
+.ss-content:hover .ss-content-overlay,
+.ss-content:active .ss-content-overlay {
     opacity: 1
 }
 
@@ -195,7 +198,8 @@ body {
     transition: all 0.3s ease-in-out 0s
 }
 
-.ss-content:hover .ss-content-details, .ss-content:active .ss-content-details {
+.ss-content:hover .ss-content-details,
+.ss-content:active .ss-content-details {
     top: 50%;
     left: 50%;
     opacity: 1
@@ -219,12 +223,38 @@ body {
     top: 80%
 }
 
+.hero-quote {
+    font-size: 48px;
+}
+
+@media only screen and (max-width: 426px) {
+    .hero-quote {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .hero-quote {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1026px){
+    .hero-quote {
+        font-size: 36px;
+    }
+}
+
+
+
+
 /* Interests styling  */
 
 .interests-sec {
     width: 50%;
     max-width: 1200px;
 }
+
 .int-div {
     background: rgba(0, 0, 0, 0.1);
     display: flex;
@@ -235,11 +265,12 @@ body {
     font-size: 18px;
     transition: 500ms;
 }
+
 .int-div:hover {
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     color: white;
-    transform: scale(0.9,0.9);
+    transform: scale(0.9, 0.9);
 }
 
 
@@ -260,12 +291,24 @@ body {
 }
 
 .section-title {
-    font-size: 8vh;
+    font-size: 72px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .aboutmetext {
     color: #2B2A29;
+}
+
+.moreaboutmebtn {
+    border-top: none;
+    border-left: none;
+    width: 100px;
+}
+
+@media (max-width: 767px) {
+    #resumedisplay {
+        display: none;
+    }
 }
 
 /* Contact form styling  */
@@ -278,24 +321,23 @@ body {
 .cntc-subcontent p {
     margin: 2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
     transition: 500ms;
-    opacity: 70%;
 }
 
 .cntc-subcontent p:hover {
     color: black;
-    opacity: 100%;
 }
 
 .cntc-icon {
     font-size: 2em;
     margin-right: 15px;
     transition: 500ms;
-    opacity: 70%;
+    color: rgba(0, 0, 0, 0.7);
+
 }
 
 .cntc-icon:hover {
-    opacity: 100%;
     color: black;
 }
 
@@ -320,6 +362,18 @@ body {
 }
 
 /* Projects styling */
+
+@media only screen and (max-width: 768px) {
+    #projects1 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #projects2 {
+        display: none;
+    }
+}
 
 #project-modal-btn {
     border: 0px !important;
@@ -415,9 +469,3 @@ body {
         font-size: 3vw;
     }
 }
-
-
-
-
-
-

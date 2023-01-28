@@ -28,25 +28,6 @@
     <link rel="stylesheet" href="assets/style.css">
     <script src="assets/script.js"></script>
 
-    <!-- Form backend part -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <script>
-        function sendEmail() {
-            console.log("Sending Message");
-            Email.send({
-                SecureToken: "cf3dba78-6edd-4a6f-831d-6dc8c3ab5642",
-                To: 'sarangakulkarni02@gmail.com',
-                From: "btw.im.busy@gmail.com",
-                Subject: "Contact form Enquiry",
-                Body: "Name : " + document.getelembyid("name").value + "<br>" + "Email : " + document.getelembyid("email").value + "<br>" + "Description : " + document.getelembyid("description").value
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script>
-
-
     <title>Portfolio | Sarang</title>
 </head>
 
@@ -187,31 +168,32 @@
         <img class="img-fluid border border-dark" src="assets/images/contact_image.jpg" alt="contact_image">
 
         <div class="container" style="font-family: 'Inter';">
-            <p class="fs-1 text-black" style="margin-top: 10vh;">I would love to have a conversation!</p>
+            <p class="fs-1 text-black" style="margin-top: 80px;">I would love to have a conversation!</p>
             <hr>
-            <div class="mx-auto my-3">
 
-                <!-- Form  -->
-                <div class="row">
-                    <div class="mb-3 col-md">
-                        <label for="name" class="form-label">Your Name</label>
-                        <input type="text" class="form-control form-input" id="name" name="name" autocomplete="off"
-                            required placeholder="Enter your Name">
+            <!-- Form  -->
+            <div class="mx-auto mt-3 mb-5">
+                <form action="https://formspree.io/f/mknaoobv" method="POST">
+                    <div class="row">
+                        <div class="mb-3 col-md">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control form-input" id="name" name="name" autocomplete="off"
+                                required placeholder="Enter your Name">
+                        </div>
+                        <div class="mb-3 col-md">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control form-input" id="email" aria-describedby="emailHelp"
+                                name="email" autocomplete="on" required placeholder="eg: you@yoursite.com">
+                        </div>
                     </div>
-                    <div class="mb-3 col-md">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control form-input" id="email" aria-describedby="emailHelp"
-                            name="email" autocomplete="on" required placeholder="eg: you@yoursite.com">
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description:</label>
+                        <textarea name="description" class="form-control form-input" id="description" rows="5"
+                            autocomplete="off" required placeholder="A brief description of your enquiry"></textarea>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <label for="description" class="form-label">Description:</label>
-                    <textarea name="description" class="form-control form-input" id="description" rows="5"
-                        autocomplete="off" required placeholder="A brief description of your enquiry"></textarea>
-                </div>
-                <form method="post">
-                    <div class="mb-3"><input type="submit" class="btn btn-outline-dark w-25 mx-auto"
-                            style="margin: 0 10px; font-family: 'Anurati';" value="Send Email" onsubmit="sendEmail()">
+                    <div class="mb-3">
+                        <input type="submit" class="btn btn-outline-dark mx-auto"
+                            style="margin: 0 10px; font-family:'Anurati'; width: 25%; min-width: 180px;">
                     </div>
                 </form>
             </div>
@@ -221,7 +203,7 @@
 
     <!-- Back to home  -->
     <section>
-        <div class="container" style="margin-top: 6vh;">
+        <div class="container">
             <div class="mx-auto bt-home" style="width: fit-content;">
                 <p class="text-center m-0 h4"><a href="index.html">Back to Home</a></p>
                 <div class="d-flex m-0 justify-content-center">
@@ -236,7 +218,7 @@
     <!-- Footer -->
     <footer id="footer">
         <div id="footer-container" class="container-fluid">
-            <div class="container-fluid" style="padding-top: 5vh; margin-top: 5vh;">
+            <div class="container-fluid" style="padding-top: 50px; margin-top: 50px;">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12 text-center menu-content my-2">
                         <a class="navbar-brand" href="index.html" style="font-family: 'elianto';">
