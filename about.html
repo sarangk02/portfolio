@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <link rel="icon" href="assets/images/peep.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Fonts -->
+    <link href="http://fonts.cdnfonts.com/css/elianto" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/anurati" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
+
+
+    <title>About | Sarang</title>
+</head>
+
+<body>
+
+    <!-- Header  -->
+    <section>
+        <!-- Nav Bar -->
+        <div id="non-menu" class="container-fluid">
+            <nav class="navbar-light">
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <a class="navbar-brand" href="index.html" style="font-family: 'elianto';">
+                            <img src="assets/images/signature_dark.png" alt="logo" height="100vw"
+                                class="d-inline-block align-items-center">
+                            <span class="logo-text"> SARANG K. </span>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="contact.html"><button type="button" id="nav-btn" class="btn btn-outline-dark">Get in
+                                Touch</button></a>
+                        <a href="assets/Sarang-Resume.pdf" download="Sarang-Resume.pdf"><button type="button"
+                                id="nav-btn" class="btn btn-outline-dark">Resume</button></a>
+                        <div id="nav-menu-btn" onclick="openmenu()"><img src="assets/images/menu_dark.png" height="30px"
+                                alt=""></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- fixed menu  -->
+        <div id="menu-container" class="container-fluid">
+            <nav class="navbar-dark">
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <a class="navbar-brand" href="index.html" style="font-family: 'elianto';">
+                            <img src="assets/images/signature_light.png" alt="logo" height="100vw"
+                                class="d-inline-block align-items-center">
+                            <span class="logo-text"> SARANG K. </span>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="contact.html"><button type="button" id="nav-btn" class="btn btn-outline-light">Get in
+                                Touch</button></a>
+                        <a href="assets/Sarang-Resume.pdf" download="Sarang-Resume.pdf"><button type="button"
+                                id="nav-btn" class="btn btn-outline-light">Resume</button></a>
+                        <div id="nav-menu-btn" onclick="closemenu()"><img src="assets/images/close_light.png"
+                                height="30px" alt=""></div>
+                    </div>
+                </div>
+            </nav>
+            <hr>
+            <div id="menu-hero" class="container-md d-md-flex justify-content-between align-items-center">
+                <div class="peep-div"><img class="img-fluid" src="assets/images/peep.png" alt=""></div>
+                <ul class="list-unstyled menu-link-sec">
+                    <li class="menu-link"><a href="index.html">Home</a></li>
+                    <li class="menu-link"><a href="about.html">About Me</a></li>
+                    <li class="menu-link"><a href="contact.html">Contact</a></li>
+                    <li class="menu-link"><a href="assets/Sarang-Resume.pdf" download="Sarang-Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md col-sm-12 menu-content my-2">
+                        <p>Speak</p>
+                        <div class="menu-subcontent">
+                            <p><a href="mailto:sarangakulkarni02@gmail.com">sarangakulkarni02@gmail.com</a></p>
+                            <p><a href="tel:+919421062179">+91 942106 2179</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md col-sm-12 menu-content my-2">
+                        <p>Visit</p>
+                        <div class="menu-subcontent">
+                            <p>Evergreen Homes, Nagala Park, Kolhapur, Maharashtra, IN - 416002.</p>
+                        </div>
+                    </div>
+                    <div class="col-md col-sm-12 menu-content my-2">
+                        <p>Follow</p>
+                        <div class="menu-subcontent">
+                            <p>
+                                <a target="_blank" href="https://www.linkedin.com/in/sarangkulkarniii/"><i
+                                        class="menu-icon bi bi-linkedin"></i></a>
+                                <a target="_blank" href="https://github.com/sarangk02"><i
+                                        class="menu-icon bi bi-github"></i></a>
+                                <a target="_blank" href="https://twitter.com/itsSarangK"><i
+                                        class="menu-icon bi bi-twitter"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/sarangkulkarniii/"><i
+                                        class="menu-icon bi bi-instagram"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me Hero Part -->
+    <section id="aboutme">
+        <div class="container">
+            <p class="fs-1 text-center section-title">About Me</p>
+            <p style="font-size: 20px;" class="mx-auto w-75 text-center">An Engineering student at K. J. Somaiya
+                Institute Technology with HSC graduation Degree. Possess C & Python
+                programming language, Web Development skills and fluent in English, Marathi, Hindi. Keen to work in Web
+                Development and Software Development.</p>
+        </div>
+
+        <!-- About me basic details and photo -->
+        <div class="container mt-5">
+            <div class="row justify-content-center align-items-center" style="margin-bottom: 20px;">
+                <div class="col-md-4 mb-4">
+                    <img id="aboutme-pic" src="assets/images/profile_pic.jpg" class="img-fluid rounded shadow-lg"
+                        alt="">
+                </div>
+                <div class="col-md-6" style="font-family: 'Inter';">
+                    <h2>Hey, I'm Sarang Kulkarni</h2>
+                    <p class="blockquote">Undergraduate Student of Computer Engineering</p>
+                    <div class="container p-2">
+                        <ul style="list-style-type: none;">
+                            <li class="text-dark"><span class="text-black-50">Birthday :</span> 5 August, 2002</li>
+                            <li class="text-dark"><span class="text-black-50">Age :</span> 20</li>
+                            <li class="text-dark"><span class="text-black-50">Degree :</span> Persuing BTech. Computer
+                                Engineering</li>
+                            <!-- <li class="text-dark"><span class="text-black-50">Website :</span> <a
+                                    href="index.html">www.example.com</a></li> -->
+                            <li class="text-dark"><span class="text-black-50">Contact :</span> <a
+                                    href="tel:+919421062179">+91 942106 2179</a></li>
+                            <li class="text-dark"><span class="text-black-50">Email :</span> <a
+                                    href="mailto:sarangakulkarni02@gmail.com">sarangakulkarni02@gmail.com </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- More About me -->
+        <div>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <p class="fs-2">More About Me</p>
+                    <hr class="my-3">
+
+                    <div class="d-flex flex-md-row flex-column align-items-start justify-content-center p-1 rounded-1"
+                        style="background-color: rgba(0, 0, 0, 0.05);">
+
+                        <div class="nav flex-md-column d-sm-block nav-pills me-3 justify-content-center"
+                            id="v-pxills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="btn btn-outline-dark m-2 moreaboutmebtn active" id="v-pills-home-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
+                                aria-controls="v-pills-home" aria-selected="true">General</button>
+                            <button class="btn btn-outline-dark m-2 moreaboutmebtn" id="v-pills-profile-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">Values</button>
+                            <button class="btn btn-outline-dark m-2 moreaboutmebtn" id="v-pills-messages-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">Experiance</button>
+                        </div>
+
+                        <div class="tab-content p-3" id="v-pills-tabContent" style="height: fit-content;">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab">
+                                <!-- General  -->
+                                <p class="aboutmetext" style="text-indent: 50px;">My childhood was very versatile with
+                                    my loving Aai - Baba and Dada. I studied in 7 different Schools from Rural Areas to
+                                    Cities; from Government Schools to Private Schools because of my father's job. So I
+                                    was always making new friends in school and the neighborhood. During this phase, I
+                                    came across the wide nature of Human Beings. This transience has benefited me in a
+                                    lot of ways. </p>
+                                <p class="aboutmetext" style="text-indent: 50px;">I have multiple hobbies but if i have
+                                    to name a few, then after an audit, Trekking, Listening Music and Playing Games are
+                                    more favored. I'm always ready for treks. I have realized a very valuable fact from
+                                    trekking: "I'm a very teeny tiny living object in this universe, which can be
+                                    compromised any minute, so burn your ego and live in the present." I have met many
+                                    intelligent minds on treks.
+                                </p>
+                                <p style="text-indent: 50px;">
+                                    My best <i>paid</i> friend is Spotify. I have spent many hours listening to Songs. I
+                                    listen to it while dealing with Math sums, During Submissions, traveling and even
+                                    while creating this Portfolio. I like Coldplay, One Direction, A. R. Rehman, Avicii,
+                                    The Weekend ...... and this list goes on. I'm more of a musical guy, so there are
+                                    South Indian, Nepali, Spanish, Dutch, French songs in my ‘Liked Songs’ playlist even
+                                    though I can't understand a single word of it. My favorite movies are "Zindagi Na
+                                    Milegi Dobara'' which teaches how to live in the moment and "Interstellar" which
+                                    states the definition of a Perfect Movie. I have watched sitcoms, webseries and many
+                                    movies of many genres especially Comedy Drama, Suspense, Mystery, Science Fiction
+                                    and History.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab">
+                                <!-- Values -->
+                                <p class="aboutmetext" style="text-indent: 50px;"> I don't have any role models. But I
+                                    get inspired by the qualities of many leaders. I always seek to learn new things. I
+                                    don't care who it is teaching me unless it is valuable. I always try to maintain
+                                    Decisiveness, Ethics, Trustworthiness and Appreciation within myself. My strong and
+                                    weak point is that I never accept a thought if it isn't logically proven, that's why
+                                    i hate subject of Exceptions i.e. Chemistry.
+                                </p>
+                                <p style="text-indent: 50px;">
+                                    I like to share my thoughts with my family and friends and get their views. It helps
+                                    me to get to know different perspectives on things. My Aai taught me to think
+                                    emotionally, learnt practical thinking from Baba and how to integrate this, I learnt
+                                    from my Dada.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab">
+                                <!-- Experiance  -->
+                                <p class="aboutmetext" style="text-indent: 50px;"> I primarily aim to master Web
+                                    Development. I was introduced to the basics of web development in my junior college
+                                    life. After 12th, I worked on a project on WebFlow, which is basically a drag and
+                                    drop way of building websites, but it helped me to understand frontend development
+                                    terms. As my Interest grew in it, I utilized the Covid 19 lockdown period to learn
+                                    the HTML, CSS and JS language and later fell in love with the Bootstrap framework.
+                                    During the course, I practiced Clean and Readable coding. I always use commenting
+                                    for better understanding.
+
+                                <p style="text-indent: 50px;">
+                                    I was getting good at frontend development and it helped in my college projects. I
+                                    have worked on the Gym and School Management System in my 3rd and 4th Semester of
+                                    Engineering journey. I explored jQuery, JSP and JDBC for a Gym Management Website.
+                                    In the School Management System, I explored the Django framework.
+                                </p>
+                                <p style="text-indent: 50px;">
+                                    In my 5th semester, I created a website under a project named "TCS Quiz WebApp" for
+                                    our college. I used the Bootstrap framework along with PHP. This was the first
+                                    project in which I handled backend along with frontend single handedly. In this
+                                    project, I used my MySQL knowledge effectively.
+                                </p>
+                                <p style="text-indent: 50px;">
+                                    During the college curriculum, my friends and I participated in SIH Hackathon 2022.
+                                    Our problem title was "Promoting Fitness through Gamification". Our solution idea
+                                    was to create an android game and connect it to gym machinery and google Fit app
+                                    (Any fitness tracker Application). Sadly, The project wasn't completed because of
+                                    time constraints and a lot to learn but on the positive side, it gave me a peek at
+                                    the functioning of Unreal Engine for Game Development, Android Studio, Google APIs
+                                    and Firebase.
+                                </p>
+                                <p style="text-indent: 50px;">
+                                    I learned C in the college curriculum and Python on my own. I was introduced to
+                                    competitive programming. As I like challenges, I try to solve programming problems
+                                    with time and space constraints in my free time in college practical lab sessions.
+                                    The satisfaction after coding very difficult problems was incredible. It helped me
+                                    to grow the power of brainstorming.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Displayed Resume  -->
+            <div class="jumbotron jumbotron-fluid p-5" id="resumedisplay">
+                <div class="container">
+                    <p class="fs-2">My Resume</p>
+                    <hr class="my-4">
+                    <iframe class="w-75" title="Sarang Resume" allowfullscreen src="assets/Sarang-Resume.pdf" name="Resume" style="border: none; display:flex;margin: auto; height: 700px;"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peste the testimonials div here -->
+        <div>
+            <!-- Paste the education div here  -->
+        </div>
+    </section>
+
+
+    <!-- Back to home  -->
+    <section>
+        <div class="container">
+            <div class="mx-auto bt-home my-4" style="width: fit-content;">
+                <p class="text-center m-0 h4"><a href="index.html">Back to Home</a></p>
+                <div class="d-flex m-0 justify-content-center">
+                    <div class="bt-home-bar"></div>
+                    <div class="bt-home-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact above footer -->
+    <section style="display: none;">
+        <div class="container" style="margin-top: 20px; margin-bottom: 20px">
+            <div id="contact-short-container" class="d-flex flex-column mx-auto p-5">
+                <div class="text-dark h2 text-center">Interested in Working together? Let's chat.</div>
+                <div class="col mx-auto my-2 text-center">
+                    <a href="contact.html"><button type="button" id="nav-btn-cntct" class="btn btn-outline-dark">Get in
+                            Touch</button></a>
+                    <a href="assets/Sarang-Resume.pdf" download="Sarang-Resume.pdf"><button type="button"
+                            id="nav-btn-cntct" class="btn btn-outline-dark">Resume</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div id="footer-container" class="container-fluid">
+            <div class="container-fluid" style="padding-top: 50px; margin-top: 50px;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-center menu-content my-2">
+                        <a class="navbar-brand" href="index.html" style="font-family: 'elianto';">
+                            <img src="assets/images/signature_light.png" alt="logo" height="100vw"
+                                class="d-inline-block align-items-center">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-center menu-content my-2">
+                        <p>Speak</p>
+                        <div class="menu-subcontent">
+                            <p><a href="mailto:sarangakulkarni02@gmail.com">sarangakulkarni02@gmail.com</a></p>
+                            <p><a href="tel:+919421062179">+91 942106 2179</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-center menu-content my-2">
+                        <p>Visit</p>
+                        <div class="menu-subcontent">
+                            <p>Evergreen Homes, Nagala Park, Kolhapur, Maharashtra, IN - 416002.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-center menu-content my-2">
+                        <p>Follow</p>
+                        <div class="menu-subcontent">
+                            <p>
+                                <a target="_blank" href="https://www.linkedin.com/in/sarangkulkarniii/"><i
+                                        class="menu-icon bi bi-linkedin"></i></a>
+                                <a target="_blank" href="https://github.com/sarangk02"><i
+                                        class="menu-icon bi bi-github"></i></a>
+                                <a target="_blank" href="https://twitter.com/itsSarangK"><i
+                                        class="menu-icon bi bi-twitter"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/sarangkulkarniii/"><i
+                                        class="menu-icon bi bi-instagram"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
